@@ -1,0 +1,30 @@
+name = "mary"
+#name.capitalize()#首字母大写
+#name.count(a)#统计a出现的次数
+print(name.center(50,"-"))
+print(name.endswith("ry"))
+print(name.expandtabs())
+print(name.find("a"))
+print(name.format(name='alex',year=23))
+print(name.format_map({'name':'alex','year:12'}))
+'abc'.isalnum()#阿拉伯数字
+'abx123'.isalpha()
+'12a'.isdecimal()
+'1a'.isdecimal()#判断是不是一个合法的变量名
+'33'.isnumeric()#判断仅有数字
+'My Name'.istitle()
+print(''.join(['1','2','3']))
+name.ljust(50,'*')
+name.rjust(50,'*')
+name.lower()
+name.upper()
+name.lstrip()#去左边的回车
+name.rsplit()#去右边
+name.strip()#去全部
+str.maketrans("abcdef",'123456')#用数字替换对应字母
+'alex'.replace()
+'ale'.rfind('a')#从左到右找出第一a
+'alexas'.split('l')#删除l留下其他的部分
+'alex'.splitlines()
+'alex'.swapcase()#大写变小写，小写变大写
+'alex'.zfill(50)

@@ -48,3 +48,4 @@ for i in names:
     print(i)
 #跳着切
 print(names[::2])
+#列表可以嵌套任何类型

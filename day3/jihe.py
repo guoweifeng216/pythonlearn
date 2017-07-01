@@ -25,3 +25,4 @@ print(list_1-list_2)
 list_1.add(99)
 list_1.update([777,999])
 print(list_1)
+print(list_1.discard(777))#list_1.remove()会报错

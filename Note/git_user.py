@@ -1,4 +1,5 @@
 git常用命令:
+git init
 1.git add file(git add *)添加文件
 2.git rm file
 3.git commit -m "msg"
@@ -20,3 +21,4 @@ git常用命令:
 1.git add file
 2 git commit -m "msg"
 3.git push 名称 master
+

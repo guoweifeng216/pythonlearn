@@ -152,6 +152,22 @@ def sql_action(sql_dic):
     return sql_dic.get('func')(sql_dic)
 
 def insert(sql_dic):
+    db,table=sql_dic.get("imte")[0].split('.')
+    with open('%s/%s'%(db,table),'ab+') as fh:
+        offs=100
+        while True:
+            fh.seek(offs,2)
+            lines = fh.readlines()
+            if len(lines)>1:
+                last=lines[-1]
+                break
+             offs=2
+        last=last.decode(encoding='utf-8')
+        last_id=int(last.split(',')[0])
+        new_id=last_id+1
+        record=sql_dic.get('value')[0].split('.')
+        record.insert(0,str(new_id))
+        record_str=','.join(record)+'\n'
     pass
 
 def delete(sql_dic):

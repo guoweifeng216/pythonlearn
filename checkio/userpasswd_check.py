@@ -3,6 +3,7 @@ def checkio(data):
     T2=False
     T3=False
     for char in data:
+
         if char.isdigit():
             T1=True
         if char.isupper():

@@ -12,6 +12,8 @@ class LGstudent:
 
     def setFinal(self,final):
         self._final=final
+    def getName(self):
+        return self._name
 
     def calcSemGrade(self):
         average=(self._midterm+self._final)/2

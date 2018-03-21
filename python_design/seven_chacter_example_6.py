@@ -20,4 +20,3 @@ def main():
     for pupil in listOfStudent:
         print pupil
 main()
-# ['as	B']

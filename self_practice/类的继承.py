@@ -25,6 +25,8 @@ class SchoolNumber(object):
     #     SchoolNumber.member-=1
 
 
+
+
 class Teacher(SchoolNumber):
     """"讲师"""
     def __init__(self,name,age,sex,salary,course):

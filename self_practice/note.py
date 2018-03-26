@@ -5,4 +5,4 @@ class  Dog(object):
     def sayhi(self):
         print "Hi,I'm dog ,my name's %s"%self.name
 
-        
+

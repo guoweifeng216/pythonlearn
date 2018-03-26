@@ -30,7 +30,8 @@ class SchoolNumber(object):
 class Teacher(SchoolNumber):
     """"讲师"""
     def __init__(self,name,age,sex,salary,course):
-        SchoolNumber.__init__(self,name,age,sex)
+        # SchoolNumber.__init__(self,name,age,sex)#经典类写法
+        super(Teacher,self).__init__(name,age,sex)#新式类写法
         self.salary=salary
         self.course=course
     def teaching(self):

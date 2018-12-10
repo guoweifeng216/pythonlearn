@@ -4,33 +4,45 @@
 @data:2018/12/7 16:28
 @filename:Secret_Message
 """
-import re
+
 
 def find_message(strings):
-    p = re.compile(r'[-,$()#+&*?!]')
-    # subs = re.split(p, strings)
+    import re
+    p = re.compile(r'[-,.$()#+&*?!]')
     subs = re.sub(p, " ", strings)
-    print(subs)
-    # str_lsit = subs.split(' ')
-    str_lsit = " ".join(subs)
-    result_tmp = ' '
-    cnt = 0
+    list_string = subs.split(" ")
+    result = ''
+    cnt_big_alphabet = 0
+    list_tmp = []
+    alphabet_cnt = 0
     if len(strings) > 0:
-        for str in str_lsit:
-            for i in range(len(str)):
-                if str[i].isupper():
-                    result_tmp = result_tmp + str[i]
-                    cnt += 1
-        result = result_tmp
+        for strs in list_string:
+            if len(strs) > 0:
+                list_tmp.append(strs)
+            else:
+                continue
+        for i in range(len(list_tmp)):
+            if list_tmp[i].capitalize():
+                alphabet_cnt += len(list_tmp[i])
+                for alphabet in list_tmp[i]:
+                    if alphabet.isupper():
+                        result = result + alphabet
+                        cnt_big_alphabet += 1
+
+        if alphabet_cnt == cnt_big_alphabet:
+            status = "Capitals"
+        else:
+            status = result.lower()
+
     else:
-        result = result_tmp
-        status = 'nothing'
-    # print(result)
-    # return result, status
+        result = result
+        status = "nothing"
+
+    return result, status
 
 
 find_message("How are you? Eh, ok. Low or Lower? Ohhh.")
-# find_message("hello world!")
-find_message("HELLO WORLD!!!")
+find_message("hello world!")
+find_message("HELLO WORD!!!")
 
 

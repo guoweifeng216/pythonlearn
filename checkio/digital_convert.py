@@ -6,23 +6,30 @@
 """
 import string
 
-def digital_convert(number, num_type):
-    print(int(number, num_type))
-    # print(oct(number[len(number) - 1]))
+def checkio(number, num_type):
+    flag = True
+    result = 0
     if (num_type >= 10) & (num_type < 36):
         num_tmp = chr(num_type + 55)
-        print(num_tmp)
-    if num_tmp in number:
-        print("********")
+        for alh in number:
+            if alh >= num_tmp:
+                result = -1
+                flag = False
+        if flag:
+            result = int(number, num_type)
+    elif num_type == 36:
+        result = int(number, num_type)
     else:
-        # result = int(number, num_type)
-        print("******")
-    # print(num_type)
-
-
-
-
-
-
-
-digital_convert("Z", 36)
+        for alh in number:
+            if alh >= str(num_type):
+                result = -1
+                flag = False
+        if flag:
+            result = int(number, num_type)
+    return result
+checkio("AF", 16)
+checkio("101", 2)
+checkio("101", 5)
+checkio("Z", 36)
+checkio("AB", 10)
+checkio("113", 2)

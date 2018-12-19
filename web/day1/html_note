@@ -32,7 +32,19 @@ HTML:
         =========小总结===========
             所有标签分为：
                 块级标签：H系列（加大加粗） P标签（段落之间有间距）div标签（白板自身没有特性）
-                行内标签：span标签（白板自身没有特性）
+                行内标签：span标签（白板自身没有特性）input标签
+            标签可以嵌套
+            标签存在的意义，CSS操作。js操作
+            ps:chorme审查元素的使用：
+                定位
+                查看样式
+        标签form action表示数据要提交到那里
+        input系列
+            input type = "text" name 属性 value= "zhaohuan"
+            input type = 'password' name 属性
+            input type = 'submit' value = '提交'提交按钮，提交表单
+            input type = 'button' value= '登录'按钮
+            
     7、div标签
 
 

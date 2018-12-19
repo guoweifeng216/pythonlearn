@@ -1,0 +1,38 @@
+HTML:
+    1.HTMl是一套浏览器的规则.
+    2.开发者
+        学习HTML规则
+        开发后台程序：
+            1.写HTML文件（充当模板的作用）
+            2 数据库获取数据，然后替换到html文件的指定位置
+    3 本地测试
+        找到文件路径，直接选择浏览器打开
+        pycharm打开测试
+    4 编写HTML文件
+        注释<!--注释的内容--->内容是被注释
+        DOCTYPE 对应关系
+        html标签，标签内部可以写属性，只能有一个
+            加入<meta http-equiv="Refresh" Content="30">表示每隔30秒刷新一次页面
+            加入<meta http-equiv="Refresh" Content="30;Url=http://www.baidu.com">表示每隔30秒后跳转到指定的网页
+            <meta name="keywords" content="关键字内容">关键字搜索
+            <meta name="description" content="描述内容">描述网站
+            <meta http-equiv="X-UA-Compatible" content="IE=IE9;IE=IE8" >
+            <link>图标
+
+    5、标签分类
+        自闭和标签
+            <meta charset="UTF-8">
+        主动闭合
+            <title>Title</title>
+    6、body标签
+        图标 &nbsp;
+        p标签段落
+        br换行标签
+        h1标题，h6最小
+        =========小总结===========
+            所有标签分为：
+                块级标签：H系列（加大加粗） P标签（段落之间有间距）div标签（白板自身没有特性）
+                行内标签：span标签（白板自身没有特性）
+    7、div标签
+
+

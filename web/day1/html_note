@@ -44,7 +44,7 @@ HTML:
             input type = 'password' name 属性
             input type = 'submit' value = '提交'提交按钮，提交表单
             input type = 'button' value= '登录'按钮
-            
+        <testarea>默认值</testarea>
     7、div标签
 
 

@@ -45,6 +45,25 @@ HTML:
             input type = 'submit' value = '提交'提交按钮，提交表单
             input type = 'button' value= '登录'按钮
         <testarea>默认值</testarea>
-    7、div标签
+        <select>标签 name option value size multiple
+        <a>标签
+            跳转
+            铆 href = '#某个标签的ID'，标签ID不允许重复
+        <img>标签
+            alt属性当图片不存在时将要显示的部分
+            title属性鼠标放在图片上提示信息
+            src属性加载图片所在位置
+        <div>
+        列表标签
+            <ul>
+            <ol>
+            <dl>
+        表格
+            <table>border属性=1表带框
+            <tr>行rowspan属性占几行合并行
+            <td>列colspan属性占几列合并列
+        <label>
+            与input标签ID关联
+
 
 
